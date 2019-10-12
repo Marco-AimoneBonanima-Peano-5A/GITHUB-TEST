@@ -6,6 +6,7 @@
 package primoclient;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -22,9 +23,10 @@ public class PrimoClient {
     public static void main(String[] args) {
         try {
             // TODO code application logic here
+            // Creo la connessione con il server
+            // Invio un numero
 
-            Socket s = new Socket("localhost",7777);
-            //s.getOutputStream().write(341);
+            Socket s = new Socket("localhost",6666);
             PrintWriter pw = new PrintWriter (s.getOutputStream(),true);
             pw.println("Sono il client");
             s.close();
