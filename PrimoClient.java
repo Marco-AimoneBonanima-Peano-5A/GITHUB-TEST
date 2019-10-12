@@ -29,7 +29,7 @@ public class PrimoClient {
             pw.println("Sono il client");
             s.close();
         } catch (IOException ex) {
-            Logger.getLogger(SecondoClient.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(PrimoClient.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }
